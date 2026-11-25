@@ -1,0 +1,9 @@
+{
+  "name": "nexora-meditrack-showcase",
+  "version": "1.0.0",
+  "description": "Nexora - MediTrack Technology Showcase",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

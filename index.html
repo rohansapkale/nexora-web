@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora • MediTrack Engineering & Technology Showcase</title>
+  <meta name="description" content="Nexora presents MediTrack: Technical architecture and product engineering showcase for MediTrack Web and MediTrack Mob." />
+  
+  <!-- Typography (Inter + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <div class="brand-symbol">NX</div>
+        <div class="brand-text-col">
+          <div class="brand-org">NEXORA</div>
+          <div class="brand-subtitle">Connect • Build • Automate</div>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#architecture" class="nav-link">Architecture</a>
+        <a href="#matrix" class="nav-link">Tech Exposure</a>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle display theme">
+          <span id="theme-toggle-icon" class="theme-toggle-icon">●</span>
+          <span id="theme-toggle-text">Dark Mode</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="status-dot"></span>
+        Nexora Engineering • Pharmaceutical Cloud & Field Automation
+      </div>
+      <h1 class="hero-title">
+        Architected for Scale.<br />Engineered for the Field.
+      </h1>
+      <p class="hero-lead">
+        A deep technical examination of <strong>MediTrack Web</strong> (HQ Admin & Reconciliation Portal) 
+        and <strong>MediTrack Mob</strong> (Field Force Automation Suite) — designed with high-density Angular 20, 
+        Ionic 8, Capacitor native runtimes, NGXS state choreography, and unified ASP.NET Core Clean Architecture.
+      </p>
+
+      <div class="hero-metrics-grid">
+        <div class="metric-item">
+          <div class="metric-value">2</div>
+          <div class="metric-label">Synchronized Platforms (Web + Mob)</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">18+</div>
+          <div class="metric-label">Modular Domain Subsystems</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Strictly-Typed NSwag Contracts</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">&lt;14 MB</div>
+          <div class="metric-label">Optimized Native Android Package</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls / Filter Bar -->
+  <div class="controls-bar" id="products">
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">All Subsystems</button>
+      <button class="filter-btn" data-filter="web">MediTrack Web</button>
+      <button class="filter-btn" data-filter="mob">MediTrack Mob</button>
+      <button class="filter-btn" data-filter="shared">Cloud Backend</button>
+    </div>
+
+    <div class="system-status-indicator">
+      <span>NEXORA STACK: ANGULAR 20 • IONIC 8 • .NET 8 • POSTGRES</span>
+    </div>
+  </div>
+
+  <!-- Main Product Showcase Grid -->
+  <main class="showcase-container">
+    <div class="products-grid">
+
+      <!-- Product 1: MediTrack Web -->
+      <article class="product-card" data-category="web">
+        <div class="card-badge-row">
+          <span class="platform-pill">Web Platform</span>
+          <span class="version-tag">Angular v20 • TypeScript</span>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <img src="assets/meditrack-logo-mark.png" alt="MediTrack Web Brand" style="height: 36px; width: auto; object-fit: contain; filter: grayscale(100%) contrast(120%); opacity: 0.85;" />
+        </div>
+
+        <h2 class="product-title">MediTrack Web</h2>
+        <div class="product-role-tag">Enterprise HQ Workspace, Reconciliations & Auditing</div>
+        
+        <p class="product-description">
+          The centralized administrative command center for pharmaceutical operations. Coordinates complex relationships 
+          between doctors, chemists, stockists, and headquarters teams with sub-second data loading and auditable workflows.
+        </p>
+
+        <div class="tech-chips-label">Primary Technology Stack</div>
+        <div class="tech-chips">
+          <span class="chip">Angular 20</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">NGXS Store</span>
+          <span class="chip">RxJS Reactive</span>
+          <span class="chip">Bootstrap 5</span>
+          <span class="chip">Angular Material</span>
+          <span class="chip">NSwag Typed Proxies</span>
+          <span class="chip">SCSS Modules</span>
+        </div>
+
+        <ul class="feature-breakdown">
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Compilation Engine:</strong> Multi-tiered reconciliation engine that resolves dispatches, chemist claims, and doctor orders into verifiable ledgers.</div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Hierarchical Requisitions:</strong> Automated state machine managing monetary budgets and multi-stage branch sign-offs.</div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>AI Import Hub:</strong> Intelligent document extraction and validation pipeline for stockist inventory files.</div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Enterprise RBAC:</strong> JWT Bearer authentication with granular permission guards preventing field-role access to sensitive HQ registries.</div>
+          </li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="btn-formal" data-tech-modal="web-compilation">
+            Inspect Compilation Engine →
+          </button>
+          <button class="btn-secondary" data-tech-modal="web-requisitions">
+            Requisitions Logic
+          </button>
+        </div>
+      </article>
+
+      <!-- Product 2: MediTrack Mob -->
+      <article class="product-card" data-category="mob">
+        <div class="card-badge-row">
+          <span class="platform-pill">Mobile Native</span>
+          <span class="version-tag">Ionic 8 • Capacitor 7</span>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <img src="assets/meditrack-mark.png" alt="MediTrack Mob Brand" style="height: 36px; width: auto; object-fit: contain; filter: grayscale(100%) contrast(120%); opacity: 0.85;" />
+        </div>
+
+        <h2 class="product-title">MediTrack Mob</h2>
+        <div class="product-role-tag">Medical Representative (MR) Operations, Reporting & Schemes</div>
+
+        <p class="product-description">
+          A high-velocity mobile companion built for Medical Representatives in the field. Engineered for high responsiveness, 
+          offline calculation resilience, tactile feedback, and instantaneous territory customer lookup.
+        </p>
+
+        <div class="tech-chips-label">Primary Technology Stack</div>
+        <div class="tech-chips">
+          <span class="chip">Ionic 8</span>
+          <span class="chip">Capacitor 7.2</span>
+          <span class="chip">Angular 19/20</span>
+          <span class="chip">ApexCharts</span>
+          <span class="chip">Ng-Rive Micro-motion</span>
+          <span class="chip">Android Native</span>
+          <span class="chip">Capacitor Preferences</span>
+          <span class="chip">Offline Caching</span>
+        </div>
+
+        <ul class="feature-breakdown">
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Field Customer Profiling:</strong> Instant directory of assigned Doctors, Chemists, and Stockists with quick call and navigation triggers.</div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Interactive Sales Telemetry:</strong> High-DPI ApexCharts rendering monthly trends, investment ratios, and customer allocations on mobile screens.</div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Pharma Scheme Calculator:</strong> 100% offline mathematical engine calculating PTS, PTR, bonus ratios, and chemist ROI during sales calls.</div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet"></span>
+            <div><strong>Capacitor Native Bridge:</strong> Hardware-accelerated transitions, native status bar handling, and secure keystore token storage.</div>
+          </li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="btn-formal" data-tech-modal="mob-scheme">
+            Inspect Scheme Engine →
+          </button>
+          <button class="btn-secondary" data-tech-modal="mob-capacitor">
+            Capacitor Native Layer
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Unified System Architecture Section -->
+  <section class="architecture-section" id="architecture" data-category="shared">
+    <div class="architecture-inner">
+      <div class="section-eyebrow">End-to-End System Topology</div>
+      <h2 class="section-title">The Unified Architectural Pipeline</h2>
+      <p class="section-lead">
+        MediTrack Web and MediTrack Mob share a synchronized backend foundation. Communication is orchestrated via strongly-typed 
+        RESTful API proxies, zero-drift DTOs, and cloud-native containerized hosting.
+      </p>
+
+      <!-- Architecture Diagram Visualizer -->
+      <div class="diagram-canvas">
+        <div class="pipeline-flow">
+          
+          <!-- Node 1: Web -->
+          <div class="diagram-node">
+            <div class="node-header">
+              <span class="node-type">Frontend Client</span>
+              <span class="platform-pill">Web</span>
+            </div>
+            <div class="node-title">MediTrack Web</div>
+            <div class="node-meta">Angular 20 • NGXS<br />Admin Portal on Render</div>
+          </div>
+
+          <!-- Arrow 1 -->
+          <div class="pipeline-arrow">
+            <span>HTTPS</span>
+            <div class="arrow-line"></div>
+            <span>JSON DTOs</span>
+          </div>
+
+          <!-- Node 2: Core API -->
+          <div class="diagram-node">
+            <div class="node-header">
+              <span class="node-type">Microservice Host</span>
+              <span class="platform-pill">.NET 8</span>
+            </div>
+            <div class="node-title">MediTrack API Gateway</div>
+            <div class="node-meta">ASP.NET Core • ABP Framework<br />OAuth2 JWT • NSwag Contracts</div>
+          </div>
+
+          <!-- Arrow 2 -->
+          <div class="pipeline-arrow">
+            <span>TCP / SSL</span>
+            <div class="arrow-line"></div>
+            <span>EF Core</span>
+          </div>
+
+          <!-- Node 3: Database & Cloud -->
+          <div class="diagram-node">
+            <div class="node-header">
+              <span class="node-type">Persistence Layer</span>
+              <span class="platform-pill">Cloud DB</span>
+            </div>
+            <div class="node-title">Supabase PostgreSQL</div>
+            <div class="node-meta">PostgreSQL 15 Pooler<br />ACID Relational Storage</div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">
+            <strong>Mobile Field Linkage:</strong> MediTrack Mob interfaces directly with the central API via authenticated JWT Bearer streams and local Capacitor storage cache.
+          </div>
+          <button class="btn-secondary" data-tech-modal="cloud-architecture">
+            Inspect Cloud Architecture Specs →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Exposure & Engineering Matrix -->
+  <section class="matrix-section" id="matrix">
+    <div class="section-eyebrow">Engineering Matrix</div>
+    <h2 class="section-title">Technical Exposure & Competency Spectrum</h2>
+    <p class="section-lead">
+      Direct comparison of technical patterns, state strategies, and operational methodologies applied across the MediTrack product suite.
+    </p>
+
+    <div class="matrix-table-wrapper">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Engineering Dimension</th>
+            <th>MediTrack Web (Admin Portal)</th>
+            <th>MediTrack Mob (MR Field App)</th>
+            <th>Backend & Infrastructure</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="tech-cell-title">Core Runtime</span>
+              <span class="tech-cell-desc">Foundation & Language</span>
+            </td>
+            <td>Angular 20, TypeScript 5.8, RxJS 7.8</td>
+            <td>Ionic 8, Angular 19/20, Capacitor 7.2</td>
+            <td>ASP.NET Core (.NET 8), C#, Kestrel</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tech-cell-title">State Management</span>
+              <span class="tech-cell-desc">Pattern & Choreography</span>
+            </td>
+            <td>NGXS CQRS store, StateContext, StoragePlugin</td>
+            <td>Reactive RxJS Subjects, BehaviorSubjects</td>
+            <td>Unit of Work, ABP Repository Pattern</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tech-cell-title">Contract Validation</span>
+              <span class="tech-cell-desc">API Client Generation</span>
+            </td>
+            <td>NSwag auto-generated typed service proxies</td>
+            <td>NSwag auto-generated typed service proxies</td>
+            <td>Swagger OpenAPI 3.0 specification DTOs</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tech-cell-title">Security & Session</span>
+              <span class="tech-cell-desc">Auth Lifecycle</span>
+            </td>
+            <td>HttpInterceptor, Refresh tokens, RBAC Guards</td>
+            <td>Capacitor Keystore, In-memory bearer headers</td>
+            <td>JWT Bearer authentication, Role policies</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tech-cell-title">Offline & Caching</span>
+              <span class="tech-cell-desc">Resilience Strategy</span>
+            </td>
+            <td>Client-side state caching, optimistic UI</td>
+            <td>Capacitor Preferences, offline Scheme engine</td>
+            <td>Supabase connection pooling & index tuning</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tech-cell-title">Deployment & DevOps</span>
+              <span class="tech-cell-desc">Infrastructure pipeline</span>
+            </td>
+            <td>Docker Multi-Stage Build, Render PaaS</td>
+            <td>Android Studio, Gradle build, signed APK</td>
+            <td>Render Web Service, Cloudflare Edge DNS</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Interactive Technical Detail Modal -->
+  <div class="modal-overlay" id="tech-modal-overlay">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      
+      <div class="modal-eyebrow" id="modal-eyebrow">Technical Deep-Dive</div>
+      <h3 class="modal-heading" id="modal-heading">Module Architecture</h3>
+      
+      <div class="modal-body">
+        <p id="modal-description"></p>
+        <div class="modal-spec-grid" id="modal-specs"></div>
+        <pre class="code-box"><code id="modal-code"></code></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>NEXORA • Connect • Build • Automate</span>
+      </div>
+
+      <div class="footer-live-badge">
+        <span class="pulse-dot"></span>
+        <span>MEDITRACK SUITE • PRODUCTION ACTIVE</span>
+      </div>
+
+      <div>
+        <span>Formal Monochrome Edition • © 2026 Nexora</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
